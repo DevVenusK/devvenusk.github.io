@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: categories
 title: Swift에서 옵셔널이란 무엇이며, 언제 사용해야 하나요?
 tags: [iOS, interview]
 ---

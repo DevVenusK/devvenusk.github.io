@@ -40,7 +40,7 @@ public func ?? <T: ~Copyable>(
 }
 ```
 
-#### 기타
+### 기타
 `optioanl` 의 `map`
 ```swift
 @_alwaysEmitIntoClient

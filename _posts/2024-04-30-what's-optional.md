@@ -4,8 +4,8 @@ title: Swift에서 옵셔널이란 무엇이며, 언제 사용해야 하나요?
 date: "2021-01-17 00:00:00 +0900"
 categories: []
 tags:
-- uber/ribs
-- unit tests
+- iOS
+- interview
 type: post
 published: true
 meta: {}
@@ -38,3 +38,4 @@ public func ?? <T: ~Copyable>(
     return try defaultValue()
   }
 }
+```

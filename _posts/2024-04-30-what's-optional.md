@@ -15,7 +15,7 @@ meta: {}
     - 각종 `Binding` 기법을 사용해 값의 유무를 확인한 후 그 값을 할당한다.
   - `Forced Unwrapping` 
     - `!` 함수를 이용해 값의 유무와 상관없이 값을 할당한다.
-    - 없이 `nil` 일 경우 runtime crash 가 발생한다.
+    - 값이 `nil` 일 경우 runtime crash 가 발생한다.
     - `unsafelyUnwrapped` 와 완벽하게 동일하게 동작한다.
 ```swift
 @inlinable
@@ -28,7 +28,7 @@ public var unsafelyUnwrapped: Wrapped {
     _debugPreconditionFailure("unsafelyUnwrapped of nil optional")
   }
 }
-```
+```  
 2. 옵셔널 체이닝의 동작 원리를 설명해주세요.
   - `?` 메소드를 통해 `Optional Chaining` 을 진행하게 되며 해당 메소드마다 값의 유무를 확인하게 된다. Chaining 과정 중 값이 하나라도 없을 시 `nil` 을 반환한다. 
 3. 암시적 언래핑 옵셔널을 사용하는 경우는 언제인가요?

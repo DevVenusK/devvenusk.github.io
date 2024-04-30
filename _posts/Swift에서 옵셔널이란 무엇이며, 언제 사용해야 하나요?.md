@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Swift에서 옵셔널이란 무엇이며, 언제 사용해야 하나요?
+date: "2021-01-17 00:00:00 +0900"
+categories: ["iOS", "interview"]
+tags: ["iOS", "interview"]
 ---
 1. 옵셔널 바인딩과 강제 언래핑의 차이점은 무엇인가요?
   - Optional Binding (Optional Chaining)

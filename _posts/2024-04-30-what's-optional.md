@@ -2,7 +2,7 @@
 layout: post
 title: Swift에서 옵셔널이란 무엇이며, 언제 사용해야 하나요?
 date: "2024-04-30 00:00:00 +0900"
-categories: ["iOS/Interview"]
+categories: ["iOS/interview"]
 tags:
 - iOS
 - interview

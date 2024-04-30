@@ -12,11 +12,11 @@ meta: {}
 ---
 1. 옵셔널 바인딩과 강제 언래핑의 차이점은 무엇인가요?
   - `Optional Binding` (Optional Chaining)
-    - 각종 `Binding` 기법을 사용해 값의 유무를 확인한 후 그 값을 할당한다.
+      - 각종 `Binding` 기법을 사용해 값의 유무를 확인한 후 그 값을 할당한다.
   - `Forced Unwrapping` 
-    - `!` 함수를 이용해 값의 유무와 상관없이 값을 할당한다.
-    - 값이 `nil` 일 경우 runtime crash 가 발생한다.
-    - `unsafelyUnwrapped` 와 완벽하게 동일하게 동작한다.
+      - `!` 함수를 이용해 값의 유무와 상관없이 값을 할당한다.
+      - 값이 `nil` 일 경우 runtime crash 가 발생한다.
+      - `unsafelyUnwrapped` 와 완벽하게 동일하게 동작한다.
 ```swift
 @inlinable
 public var unsafelyUnwrapped: Wrapped {

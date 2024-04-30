@@ -20,13 +20,13 @@ meta: {}
 ```swift
 @inlinable
 public var unsafelyUnwrapped: Wrapped {
-    @inline(__always)
-    get {
-        if let x = self {
-            return x
+        @inline(__always)
+        get {
+            if let x = self {
+                return x
+            }
+            _debugPreconditionFailure("unsafelyUnwrapped of nil optional")
         }
-        _debugPreconditionFailure("unsafelyUnwrapped of nil optional")
-    }
 }
 ```  
 2. 옵셔널 체이닝의 동작 원리를 설명해주세요.
@@ -41,15 +41,15 @@ public var unsafelyUnwrapped: Wrapped {
 @_transparent
 @_alwaysEmitIntoClient
 public func ?? <T: ~Copyable>(
-    optional: consuming T?,
-    defaultValue: @autoclosure () throws -> T // FIXME: typed throw
+        optional: consuming T?,
+        defaultValue: @autoclosure () throws -> T // FIXME: typed throw
 ) rethrows -> T {
-    switch consume optional {
-    case .some(let value):
-        return value
-    case .none:
-        return try defaultValue()
-    }
+        switch consume optional {
+        case .some(let value):
+            return value
+        case .none:
+            return try defaultValue()
+        }
 }
 ```
 

@@ -24,8 +24,8 @@ public var unsafelyUnwrapped: Wrapped {
     get {
         if let x = self {
             return x
-    }
-    _debugPreconditionFailure("unsafelyUnwrapped of nil optional")
+        } 
+        _debugPreconditionFailure("unsafelyUnwrapped of nil optional")
     }
 }
 ```  

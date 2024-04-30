@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Swift에서 옵셔널이란 무엇이며, 언제 사용해야 하나요?
-date: "2021-01-17 00:00:00 +0900"
-categories: []
+date: "2024-04-30 00:00:00 +0900"
+categories: ["post"]
 tags:
 - iOS
 - interview
@@ -24,7 +24,7 @@ meta: {}
   - 객체에서 initialize 시점에 설정되는 Property 에서 사용 가능하다.
 4. nil 병합 연산자(??)의 사용 예시를 들어주세요.
   - 값이 잇다면 value 를 return 하고, 없다면 defaultValue 를 return 한다.
-``` swift 
+```swift 
 @_transparent
 @_alwaysEmitIntoClient
 public func ?? <T: ~Copyable>(

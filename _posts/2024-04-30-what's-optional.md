@@ -39,3 +39,33 @@ public func ?? <T: ~Copyable>(
   }
 }
 ```
+
+### 추가
+optioanl 의 map
+```swift
+@_alwaysEmitIntoClient
+public func map<E: Error, U: ~Copyable>(
+  _ transform: (Wrapped) throws(E) -> U
+) throws(E) -> U? {
+  switch self {
+  case .some(let y):
+    return .some(try transform(y))
+  case .none:
+    return .none
+  }
+}
+```
+optioanl 의 flatMap
+```swift
+@_alwaysEmitIntoClient
+public func flatMap<E: Error, U: ~Copyable>(
+  _ transform: (Wrapped) throws(E) -> U?
+) throws(E) -> U? {
+  switch self {
+  case .some(let y):
+    return try transform(y)
+  case .none:
+    return .none
+  }
+}
+```

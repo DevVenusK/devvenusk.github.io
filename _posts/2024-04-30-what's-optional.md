@@ -38,3 +38,4 @@ public func ?? <T: ~Copyable>(
     return try defaultValue()
   }
 }
+```

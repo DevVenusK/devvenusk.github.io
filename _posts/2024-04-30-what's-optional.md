@@ -20,13 +20,13 @@ meta: {}
 ```swift
 @inlinable
 public var unsafelyUnwrapped: Wrapped {
-  @inline(__always)
-  get {
-    if let x = self {
-      return x
+    @inline(__always)
+    get {
+        if let x = self {
+            return x
     }
     _debugPreconditionFailure("unsafelyUnwrapped of nil optional")
-  }
+    }
 }
 ```  
 
@@ -38,19 +38,19 @@ public var unsafelyUnwrapped: Wrapped {
   - 객체에서 initialize 시점에 설정되는 Property 에서 사용 가능하다.
 4. `nil` 병합 연산자(`??`)의 사용 예시를 들어주세요.
   - 값이 잇다면 `value` 를 return 하고, 없다면 `defaultValue` 를 return 한다.    
-```swift. 
+```swift
 @_transparent
 @_alwaysEmitIntoClient
 public func ?? <T: ~Copyable>(
-  optional: consuming T?,
-  defaultValue: @autoclosure () throws -> T // FIXME: typed throw
+    optional: consuming T?,
+    defaultValue: @autoclosure () throws -> T // FIXME: typed throw
 ) rethrows -> T {
-  switch consume optional {
+    switch consume optional {
     case .some(let value):
-  return value
-     case .none:
-  return try defaultValue()
-  }
+        return value
+    case .none:
+        return try defaultValue()
+    }
 }
 ```  
 

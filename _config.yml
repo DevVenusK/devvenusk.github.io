@@ -14,7 +14,7 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: VenusK # the main title
+title: HyosungKim # the main title
 
 tagline: iOS Engineer # it will display as the sub-title
 
@@ -23,13 +23,14 @@ description: >- # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
+
+author: Hyosung Kim
+github_username: devvenusk
+linkedin_username: HyosungKim
+
 url: "https://devvenusk.github.io"
-
-github:
-  username: devvenusk # change to your github username
-
-linkedin:
-  username: HyosungKim # change to your twitter username
+paginate_path: "/blog/page:num/"
+permalink: /blog/:title
 
 social:
   # Change to your full name.

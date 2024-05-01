@@ -21,7 +21,7 @@ if ('serviceWorker' in navigator) {
         registration.installing.addEventListener('statechange', () => {
           if (registration.waiting) {
             if (navigator.serviceWorker.controller) {
-          registration.waiting.postMessage('SKIP_WAITING');
+          // registration.waiting.postMessage('SKIP_WAITING');
             }
           }
         });

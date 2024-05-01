@@ -32,4 +32,5 @@ NSDiscardableContent {
 }
 ```   
 ### 참고
-[protocol NSDiscardableContent](https://developer.apple.com/documentation/foundation/nsdiscardablecontent)
+[protocol NSDiscardableContent](https://developer.apple.com/documentation/foundation/nsdiscardablecontent)   
+[NSCache instead of LRUCache for LottieView animation would restart from beginning after backgrounding app](https://github.com/airbnb/lottie-ios/pull/2290)

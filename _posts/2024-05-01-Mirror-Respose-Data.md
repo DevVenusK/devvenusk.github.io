@@ -11,6 +11,7 @@ type: post
 published: true
 meta: {}
 ---
+`API Response`에서 `action`값의 유무에 따라 다른 행동을 해야한다면 ‘init(from decoder: any Decoder) throws`가 아닌 `Mirror`를 통해 쉽게 해결할 수 있다.    
 ```
 {
 “action1”: “some action1”,
@@ -24,8 +25,6 @@ struct Response: Decodable {
     let action2: String?
     let action3: String?
 ```    
-`API Response`에서 `action`값의 유무에 따라 다른 행동을 해야한다면 ‘init(from decoder: any Decoder) throws`가 아닌 `Mirror`를 통해 쉽게 해결할 수 있다.   
-
 ```swift
 let decoded = JSONDecoder().decode(Response.self, from: responseData)
 let mirror = Mirror(reflection: decoded)

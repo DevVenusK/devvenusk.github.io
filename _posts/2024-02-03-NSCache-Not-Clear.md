@@ -16,18 +16,18 @@ import Foundation
 final class LottieAnimationCacheObject: NSObject,
 NSDiscardableContent {
     internal var animation: LottieAnimation?
-    internal func beginContentAccess () -> Bool {
-    return true
+    internal func beginContentAccess() -> Bool {
+        return true
     ｝
 
-    internal func endContentAccess@() {}
+    internal func endContentAccess() {}
 
     internal func discardContentIfPossible() {
         animation = nil
     ｝
 
     internal func isContentDiscarded() -> Bool {
-    return animation == nil
+        return animation == nil
     ｝
 }
 ```   

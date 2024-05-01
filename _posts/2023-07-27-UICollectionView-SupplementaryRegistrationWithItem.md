@@ -1,13 +1,12 @@
 ---
 layout: post
 title: Item 을 가진 UICollectionView.SupplementaryRegistration
-date: "2024-07-27 00:00:00 +0900"
+date: "2023-07-27 00:00:00 +0900"
 categories: ["iOS/tech"]
 tags:
 - iOS
 - tech
 - swift
-- collectionView
 type: post
 published: true
 meta: {}

@@ -7,6 +7,7 @@ tags:
 - iOS
 - tech
 - swift
+- collectionView
 type: post
 published: true
 meta: {}

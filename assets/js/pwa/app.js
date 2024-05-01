@@ -14,14 +14,14 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register(swUrl).then((registration) => {
       {% comment %}In case the user ignores the notification{% endcomment %}
       if (registration.waiting) {
-
+          registration.waiting.postMessage('SKIP_WAITING');
       }
 
       registration.addEventListener('updatefound', () => {
         registration.installing.addEventListener('statechange', () => {
           if (registration.waiting) {
             if (navigator.serviceWorker.controller) {
-
+          registration.waiting.postMessage('SKIP_WAITING');
             }
           }
         });

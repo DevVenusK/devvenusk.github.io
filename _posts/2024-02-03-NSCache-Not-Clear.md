@@ -6,6 +6,7 @@ categories: ["iOS/tech"]
 tags:
 - iOS
 - tech
+- swift
 type: post
 published: true
 meta: {}

@@ -13,10 +13,10 @@ meta: {}
 ---
 `LLDB`는 `Clang` 컴파일러 인프라를 사용하여 디버그 정보를 `Clang` 타입으로 변환합니다. 이를 통해 최신 `C`, `C++`, `Objective-C`, `Objective-C++` 언어 기능과 Runtime을 지원할 수 있다. 또한, 표현식을 위한 함수 호출 시 모든 `ABI(Application Binary Interface)` 세부사항을 처리하거나, 명령어를 분해하고 명령어 세부사항을 추출하는 등의 작업을 컴파일러가 수행하게 한다.   
 
-- C, C++, Objective-C 언어에 대한 최신 지원
+- `C`, `C++`, `Objective-C` 언어에 대한 최신 지원
 - 로컬 변수와 타입을 선언할 수 있는 다중 행 표현식 지원
-- 지원되는 경우 JIT(Just-In-Time 컴파일)을 사용하여 표현식을 실행
-- JIT를 사용할 수 없는 경우 표현식의 중간 표현(IR)을 평가
+- 지원되는 경우 `JIT(Just-In-Time)`을 사용하여 표현식을 실행
+- 'JIT`를 사용할 수 없는 경우 표현식의 중간 표현(`IR`)을 평가
 
 ## Command Structure
 ```

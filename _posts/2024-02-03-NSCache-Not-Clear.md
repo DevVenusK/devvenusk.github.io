@@ -10,7 +10,7 @@ type: post
 published: true
 meta: {}
 ---
-`NSCache`를 사용하다보면 시스템에 의해 의도치 않게 `cache`가 삭제되는 경우가 있습니다. 이럴경우 `protocol NSDiscardableContent`를 이용해 `cache`삭제에 대한 정책을 정의할 수 있습니다.   
+`NSCache`를 사용하다보면 시스템에 의해 의도치 않게 `cache`가 삭제되는 경우가 있다. 이럴경우 `protocol NSDiscardableContent`를 이용해 `cache`삭제에 대한 정책을 정의할 수 있다.   
 ```swift
 import Foundation
 final class LottieAnimationCacheObject: NSObject,

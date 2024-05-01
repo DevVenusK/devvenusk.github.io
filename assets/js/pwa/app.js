@@ -14,7 +14,7 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register(swUrl).then((registration) => {
       {% comment %}In case the user ignores the notification{% endcomment %}
       if (registration.waiting) {
-        $notification.toast('show');
+
       }
 
       registration.addEventListener('updatefound', () => {

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 시스템에 의해 NSCache가 의도치 않게 지워지는걸 막아보자
+title: NSCache의 생명주기를 관리하기
 date: "2024-02-12 00:00:00 +0900"
 categories: ["iOS/tech"]
 tags:

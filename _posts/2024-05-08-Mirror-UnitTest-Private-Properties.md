@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mirror를 이용한 Private Properties를 Test
+title: Mirror를 이용한 Private Property Test
 date: "2024-05-08 23:20:00 +0900"
 categories: ["iOS/tech"]
 tags:

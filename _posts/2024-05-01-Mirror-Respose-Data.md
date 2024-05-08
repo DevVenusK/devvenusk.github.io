@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mirror를 이용해 API Response를 처리해보자
+title: Mirror를 이용한 유연한 API Response를 처리
 date: "2024-05-01 14:57:00 +0900"
 categories: ["iOS/tech"]
 tags:

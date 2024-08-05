@@ -32,5 +32,5 @@ meta: {}
 
 출처: [Advanced Apple Debugging Reverse Engineering](https://www.kodeco.com/books/advanced-apple-debugging-reverse-engineering/v4.0)
 
-[^launchLLDB]: arm64체계에서는 `arch -arm64 lldb`
+[^launchlldb]: arm64체계에서는 `arch -arm64 lldb`
 [^adressofterminal]: 터미널 주소

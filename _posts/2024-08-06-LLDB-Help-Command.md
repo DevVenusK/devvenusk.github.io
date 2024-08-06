@@ -13,7 +13,7 @@ published: true
 meta: {}
 ---
 
-LLDB` 는 `help` 명령어를 제공한다.
+`LLDB` 는 `help` 명령어를 제공한다.
 ```
 (lldb) help
 ```

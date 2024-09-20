@@ -47,7 +47,7 @@ async function getJiraIssues(tp) {
     let dueDate = issue.fields.duedate ? new Date(issue.fields.duedate) : null;
     let dueDateStr = 'No Due Date';
     
-    const taskItem = `- [ ] <img src="${priorityIcon}" alt="우선순위 아이콘" style="vertical-align: middle; width: 15px; height: 15px;"> <span style="color: #000000; font-weight: 600;"><a href="https://your-domain.net/browse/${issue.key}">[${issue.key}]</a> ${issue.fields.summary}</span>`;
+    const taskItem = `- [ ] <img src="${priorityIcon}" alt="priorityIcon" style="vertical-align: middle; width: 15px; height: 15px;"> <span style="color: #000000; font-weight: 600;"><a href="https://your-domain.net/browse/${issue.key}">[${issue.key}]</a> ${issue.fields.summary}</span>`;
     
     if (!dueDate) {
       noDueDateTasks += `${taskItem} 📅 ${dueDateStr}\n`;
@@ -80,7 +80,7 @@ async function getJiraIssues(tp) {
   if (noDueDateTasks) todoList += '### Not DueDate Tasks\n' + noDueDateTasks;
     return todoList.trim();
   } catch (error) {
-    return "오류가 발생했습니다: " + error.message;
+    return "Error: " + error.message;
   }
 }
 

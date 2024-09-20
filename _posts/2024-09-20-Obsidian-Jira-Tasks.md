@@ -86,3 +86,8 @@ async function getJiraIssues(tp) {
 
 module.exports = getJiraIssues;
 ```
+
+## 결과
+<img width="599" alt="스크린샷 2024-09-20 23 46 48" src="https://github.com/user-attachments/assets/3ef7023d-c5d2-4394-a981-c628bde08ffd">
+
+

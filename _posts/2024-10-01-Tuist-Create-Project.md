@@ -1,8 +1,8 @@
 ---
 layout: post
-title: [Tuist] Create Project
+title: \[Tuist\] Create Project
 date: "2024-10-01 00:00:00 +0900"
-categories: ["Tuist"]
+categories: ["iOS/Tuist"]
 tags:
 - tuist
 - iOS

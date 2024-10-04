@@ -1,8 +1,8 @@
 ---
 layout: post
-title: [Tuist] Add Dependencies
+title: \[Tuist\] Add Dependencies
 date: "2024-10-02 00:00:00 +0900"
-categories: ["Tuist"]
+categories: ["iOS/Tuist"]
 tags:
 - tuist
 - iOS

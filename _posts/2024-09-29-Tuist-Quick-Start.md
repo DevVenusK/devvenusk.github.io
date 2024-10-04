@@ -1,8 +1,8 @@
 ---
 layout: post
-title: [Tuist] Quick Start
+title: \[Tuist\] Quick Start
 date: "2024-09-29 00:00:00 +0900"
-categories: ["Tuist"]
+categories: ["iOS/Tuist"]
 tags:
 - tuist
 - iOS

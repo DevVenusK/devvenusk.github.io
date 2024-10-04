@@ -61,6 +61,9 @@ let project = Project(
 tuist graph
 ```
 이 명령은 프로젝트의 디렉토리에 `graph.png` 파일을 출력하고 엽니다
+
+<img width="183" alt="스크린샷 2024-10-04 11 40 25" src="https://github.com/user-attachments/assets/96029981-11e0-4342-a421-dcd8faf44726">
+
 ## Use the dependency
 `tuist generate`를 실행하여 Xcode에서 프로젝트를 열고 `ContentView.swift` 파일을 다음과 같이 변경합니다:
 ```swift

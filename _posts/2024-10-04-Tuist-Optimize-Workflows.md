@@ -1,6 +1,6 @@
 ---
 layout: post
-title: \[Tuist\] Optimize workflows
+title: Tuist - Optimize workflows
 date: "2024-10-04 00:00:00 +0900"
 categories: ["iOS/Tuist"]
 tags:

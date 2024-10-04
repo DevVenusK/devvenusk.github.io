@@ -1,6 +1,6 @@
 ---
 layout: post
-title: \[Tuist\] Install Tuist
+title: Tuist - Install Tuist
 date: "2024-09-30 00:00:00 +0900"
 categories: ["iOS/Tuist"]
 tags:

@@ -54,6 +54,7 @@ let project = Project(
 그런 다음 `tuist install`를 실행하여 [Swift Package Manager](https://www.swift.org/documentation/package-manager/) 사용하여 종속성을 해결하고 가져옵니다.
 >종속성 해결자로서의 SPM  
 종속성에 대한 Tuist의 권장 접근 방식은 종속성을 해결할 때만 Swift 패키지 관리자(SPM)를 사용합니다. 그런 다음 Tuist는 종속성을 Xcode 프로젝트와 타깃으로 변환하여 구성 및 제어를 극대화합니다.
+
 ## Visualize the project
 다음을 실행하여 프로젝트 구조를 시각화할 수 있습니다:
 ```bash

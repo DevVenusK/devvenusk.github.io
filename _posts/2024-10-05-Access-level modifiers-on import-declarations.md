@@ -177,3 +177,5 @@ public import 구조체 Foo.Bar
 이러한 중복을 통해 이 제안에 설명된 유형 검사 동작이 가능합니다. 컴파일러가 import에 표시된 의도와 선언 서명에 사용된 의도를 비교할 수 있게 해줍니다. 이 검사는 종속성이 분산되지 않은 경우에 중요합니다. 숨겨진 종속성에서 공개 종속성으로 변경하면 타사에서 사용할 수 없는 종속성에서 배포된 모듈이 손상될 수 있습니다.
 ## 감사의 말
 Becca Royal-Gordon은 이 제안의 설계에 기여하고 프리피치를 작성했습니다.
+
+원본: [Access-level modifiers on import declarations](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0418-inferring-sendable-for-methods.md)

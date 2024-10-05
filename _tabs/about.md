@@ -5,7 +5,7 @@ order: 4
 ---
 
 ### Introduce
-iOS Engineer@Finda
+iOS Engineer, Finda CoreTeam
 
 ### Contributor
 [Lottie](https://github.com/airbnb/lottie-ios)   

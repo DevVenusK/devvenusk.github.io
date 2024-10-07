@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Swift Evolution - Access-level modifiers on import declarations
+title: Swift Evolution - Allow Protocols to be Nested in Non-Generic Contexts
 date: "2024-10-06 00:00:00 +0900"
 categories: ["swift/evolution/proposals"]
 tags:

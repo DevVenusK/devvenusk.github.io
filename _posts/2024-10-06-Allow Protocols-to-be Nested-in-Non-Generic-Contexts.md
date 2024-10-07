@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Swift Evolution - Access-level modifiers on import declarations
-date: "2024-10-05 00:00:00 +0900"
+date: "2024-10-06 00:00:00 +0900"
 categories: ["swift/evolution/proposals"]
 tags:
 - swift
@@ -17,6 +17,7 @@ meta: {}
 - **Review Manager**: Holly Borla
 - **Status**: Implemented (Swift 5.10)
 - **Implementation**: apple/swift#66247 (gated behind flag -enable-experimental-feature NestedProtocols)
+
 ## Introduction
 프로토콜을 non-generic `struct/class/enum/actor` 및 함수 안에 중첩할 수 있습니다.
 ## Motivation
@@ -133,6 +134,7 @@ Associated type은 하나의 구체적인 타입을 하나의 준수 타입과 �
   프로토콜 자체에서 해당 프로토콜로 자연스럽게 범위가 지정된 타입을 정의하고자 하는 경우가 있습니다. 예를 들어, 표준 라이브러리의 [`FloatingPointRoundingRule`](https://developer.apple.com/documentation/swift/FloatingPointRoundingRule) 열거형은 [`FloatingPoint` 프로토콜의 요구 사항에](https://developer.apple.com/documentation/swift/floatingpoint/round(_:)) 의해 사용되며 해당 목적으로 정의됩니다.
 - 제네릭 타입에서 프로토콜 중첩 허용
   세부 설계 섹션에서 언급했듯이 제네릭 타입 내에서 프로토콜 중첩을 허용하는 전략이 잠재적으로 있으며, 이러한 표현 기능을 사용하는 방법을 확실히 상상할 수 있습니다. 커뮤니티는 별도의 주제에서 잠재적인 접근 방식에 대해 논의할 수 있습니다.
+  
 ## Alternatives considered
 없음. 이는 언어의 기존 중첩 기능의 간단한 확장입니다.
 ## Acknowledgments

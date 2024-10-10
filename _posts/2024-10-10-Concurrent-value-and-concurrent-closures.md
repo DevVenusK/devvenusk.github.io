@@ -36,7 +36,7 @@ Swift Concurrency는 안전하고 강력한 프로그래밍 모델을 구축하�
 3. Swift Concurrency 모델을 염두에 두고 설계되지 않은 코드가 많이 포함된 기존 세계를 포용해야 합니다. 원활하고 점진적인 마이그레이션 스토리가 필요합니다.
   
 제안된 솔루션으로 들어가기 전에 모델링할 수 있는 몇 가지 일반적인 사례와 각각의 기회 및 과제를 살펴봅시다. 이를 통해 우리가 다루어야 할 디자인 공간에 대해 추론하는 데 도움이 될 것입니다.  
-### 💖 Swift + Value Semantics
+### 💖 Swift + Value Semantics {#swift-value-semantics}
 우리가 지원해야 할 첫 번째 유형은 정수와 같은 단순한 값입니다. 이러한 값은 pointer를 포함하지 않기 때문에 동시성 도메인에서 간단하게 전달할 수 있습니다.
 
 이보다 더 나아가 Swift는 동시성 경계를 넘어 안전하게 전송할 수 있는 [Value Semantics](https://en.wikipedia.org/wiki/Value_semantics)을 가진 타입에 중점을 두고 있습니다. Swift의 타입 합성 메커니즘은 class가 아닌 경우, 그 구성 요소들이 value Semantics을 제공할 때 value Semantics을 유지합니다. 여기에는 generic structs뿐만 아니라 core collection도 포함됩니다. 예를 들어, `Dictionary<Int, String>`은 동시성 도메인 간에 직접 공유할 수 있습니다. Swift의 Copy on Write 접근 방식은 collection의 표현을 사전 데이터 복사 없이도 전송할 수 있다는 것을 의미하며, 이는 매우 강력한 사실로 실제로 Swift concurrency 모델을 다른 시스템보다 더 효율적으로 만들 수 있을 것이라고 믿습니다.  
@@ -479,7 +479,7 @@ marker protocol `Sendable`과 함수 attribute `@Sendable`은 의도적으로 �
 예외적인 경우 소스가 손상될 수 있는 몇 가지 새로운 제한 사항이 있습니다:  
 * 키 경로 리터럴 첨자로 변경하면 비표준 유형으로 인덱싱된 이국적인 키 경로가 깨집니다.  
 * `Error` 및 `CodingKey`는 `Sendable`에서 상속되므로 사용자 정의 오류 및 키가 `Sendable`을 준수해야 합니다.  
-* 
+
 이러한 변경 사항으로 인해 새로운 제한 사항은 Swift 6 모드에서만 적용되며, Swift 5 및 이전 버전에서는 경고로 표시됩니다.  
 ## Effect on API resilience
 이 제안은 API 복원력에 영향을 미치지 않습니다!  

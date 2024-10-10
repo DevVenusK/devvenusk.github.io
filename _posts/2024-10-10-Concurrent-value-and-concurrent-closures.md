@@ -482,14 +482,14 @@ marker protocol `Sendable`과 함수 attribute `@Sendable`은 의도적으로 �
 
 이러한 변경 사항으로 인해 새로운 제한 사항은 Swift 6 모드에서만 적용되며, Swift 5 및 이전 버전에서는 경고로 표시됩니다.  
 ## Effect on API resilience
-이 제안은 API 복원력에 영향을 미치지 않습니다!  
+이 제안은 API 복원력에 영향을 미치지 않습니다!
 ## Alternatives Considered
 이 제안과 관련하여 논의할 만한 몇 가지 대안이 있습니다. 여기서는 주요한 몇 가지를 소개합니다.  
 ### Exotic Type System Features
 [Swift concurrency road map](https://forums.swift.org/t/swift-concurrency-roadmap/41611)에서는 향후 기능 세트의 반복에 "`mutableIfUnique`" class와 같은 새로운 타입 시스템 기능이 도입될 수 있다고 언급하고 있으며, 이동 의미론과 고유 소유권이 언젠가 Swift에 도입될 수 있다고 쉽게 상상할 수 있습니다.  
 
 향후 제안의 전체 사양을 알지 못하면 세부적인 상호 작용을 이해하기 어렵지만, `Sendable` 검사를 시행하는 검사 기계는 간단하고 구성이 가능하다고 생각합니다. 동시성 경계를 넘어 안전하게 전달할 수 있는 모든 유형에서 작동해야 합니다.   
-### Support an explicit copy hook  
+### Support an explicit copy hook
 [이 제안의 첫 번째 개정안](https://docs.google.com/document/d/1OMHZKWq2dego5mXQtWt1fm-yMca2qeOdCl8YlBG1uwg/edit#)에서는 `unsafeSend` protocol 요건을 구현하여 동시성 도메인을 가로질러 전송될 때 타입이 사용자 정의 동작을 정의할 수 있도록 했습니다. 이로 인해 제안의 복잡성이 증가하고, 원치 않는 기능(명시적으로 구현된 복사 동작)이 인정되었으며, 재귀 집계 케이스가 더 비싸고 코드 크기가 더 커졌습니다.    
 ## Conclusion
 이 제안은 동시성 도메인 간에 안전하게 전송할 수 있는 유형을 정의하는 매우 간단한 접근 방식을 정의합니다. 기존 Swift 기능과 일관되고, 사용자가 확장할 수 있으며, 레거시 코드 베이스에서 작동하고, 20년 후에도 만족할 수 있는 간단한 모델을 제공하는 최소한의 컴파일러/언어 지원만 필요합니다.  

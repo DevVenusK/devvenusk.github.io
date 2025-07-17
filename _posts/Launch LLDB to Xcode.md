@@ -1,28 +1,19 @@
 ---
-created: 2024-08-05
-layout: post
-tags:
-  - Blog
-  - LLDB
-share: "true"
----
----
-
 layout: post
 title: Launch LLDB to Xcode
-date: "2025-07-17 00:00:00 +0900"
-categories: ["iOS/debug"]
+date: 2025-07-17 00:00:00 +0900
+categories:
+  - iOS/debug
 tags:
-- iOS
-- debug
-- lldb
-- Xcode
+  - iOS
+  - debug
+  - lldb
+  - Xcode
 type: post
 published: true
-meta: { }
-
+meta: {}
+share: "true"
 ---
-
 
 1. 터미널을 열고 이름을 `LLDB`로 변경한다.
 2. 터미널에서 `lldb`[^launchlldb]를 입력하여 `LLDB`를 실행한다.

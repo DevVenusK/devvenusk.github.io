@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Concurrent value and concurrent closures
+title: Swift Evolution - Concurrent value and concurrent closures
 date: 2024-10-10 00:00:00 +0900
 categories:
   - swift/evolution/proposals

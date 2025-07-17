@@ -1,15 +1,17 @@
 ---
 layout: post
 title: Swift Testing
-date: "2025-07-17 00:00:00 +0900"
-categories: ["iOS/debug"]
-tags: 
+date: "2024-04-30 00:00:00 +0900"
+categories: ["iOS/interview"]
+tags:
 - iOS
+- interview
 type: post
 published: true
 meta: {}
 share: true
 ---
+  
 ## Test Function
 `@Test` Property 를 사용하여 `Test Function` 을 구현한다.
 `Test Function` 은 `Global Function` `Type Method` 모두 가능하다.

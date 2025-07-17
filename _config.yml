@@ -76,6 +76,7 @@ exclude:
   - example/
   - jekyll-theme-so-simple.gemspec
   - README.md
+  - README-OLD.md
   - LICENSE
   - CHANGELOG.md
 

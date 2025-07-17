@@ -2,8 +2,7 @@
 layout: post
 title: Swift Testing
 date: 2025-07-17 00:00:00 +0900
-categories:
-  - "[iOS/debug]"
+categories: [iOS/debug]
 tags: 
 type: post
 published: true

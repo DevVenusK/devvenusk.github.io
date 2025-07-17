@@ -14,7 +14,7 @@ meta: {}
 ---
 `Obsidian` 을 이용해서 일정을 관리하다보면 `Jira-issue Plugin`에 많은 불편함을 느낀다. 그 중 가장 불편한 것은 `Jira Issue`를 `Tasks` 처럼 관리하지 못한다는 것이다.
 하지만 `Templater`의 `js`를 이용해 해당 불편함을 어느정도 해소할 수 있다.
-## Java Script
+
 ```js
 async function getJiraIssues(tp) {
 	const jqlQuery = "status not in (''DONE', 'COMPLETE') AND assignee = currentUser() order by priority DESC";

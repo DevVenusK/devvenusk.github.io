@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Launch LLDB to Xcode Tests
+title: Launch LLDB to Xcode
 date: 2025-07-17 00:00:00 +0900
 categories:
   - iOS/debug

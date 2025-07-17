@@ -13,11 +13,11 @@ type: post
 published: true
 meta: {}
 ---
-- ****Proposal****: SE-0404
-- ****Author****: Karl Wagner
-- ****Review Manager****: Holly Borla
-- ****Status****: Implemented (Swift 5.10)
-- ****Implementation****: apple/swift#66247 (gated behind flag -enable-experimental-feature NestedProtocols)
+- **Proposal**: SE-0404
+- **Author**: Karl Wagner
+- **Review Manager**: Holly Borla
+- **Status**: Implemented (Swift 5.10)
+- **Implementation**: apple/swift#66247 (gated behind flag -enable-experimental-feature NestedProtocols)
 
 ## Introduction
 프로토콜을 non-generic `struct/class/enum/actor` 및 함수 안에 중첩할 수 있습니다.

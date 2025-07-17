@@ -9,7 +9,6 @@ tags:
 type: post
 published: true
 meta: {}
-share: true
 ---
   
 ## Test Function
